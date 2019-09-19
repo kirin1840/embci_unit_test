@@ -1,6 +1,6 @@
 pipeline {
- agent any
- stages {
+  agent any
+  stages {
      stage ('init'){
          steps {
             print "BUILD_NUMBER: ${env.BUILD_NUMBER}"
@@ -16,9 +16,8 @@ pipeline {
              git credentialsId: 'fa22ef6d-be81-40ff-8ff4-1c8c36b145f1', url: 'https://github.com/kirin1840/embci_unit_test.git'
          }   
      }
- }
-       
-
+  }       
+}
 /*
 node {
     stage('init') {
