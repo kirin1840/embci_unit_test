@@ -22,7 +22,7 @@ pipeline {
     stage ('build'){
       steps {
         print "build"
-        sh 'platformio test -e native'
+        platformio test -e native
 
       }
     }
