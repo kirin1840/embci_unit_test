@@ -22,8 +22,8 @@ pipeline {
     stage ('build'){
       steps {
         //print "build"
-        call 'platformio test -e native'
-        //sh 'platformio test -e native
+        //call 'platformio test -e native'
+        sh 'echo %path%'
       }
     }
   }       
