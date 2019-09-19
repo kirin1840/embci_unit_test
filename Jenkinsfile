@@ -1,9 +1,8 @@
-def targetBranch = "master"
 node {
-      stage("checkout git") {
-      dir("${WORKSPACE}") {
-          git url: "${gitUrl}", branch: "${targetBranch}"
-          sh "ls -la"
-      }
-    }
+    print "BUILD_NUMBER: ${env.BUILD_NUMBER}"
+    print "BUILD_ID: ${env.BUILD_ID}"
+    print "WORKSPACE: ${env.WORKSPACE}"
+    print "JENKINS_URL: ${env.JENKINS_URL}"
+    print "BUILD_URL: ${env.BUILD_URL}"
+    print "JOB_URL: ${env.JOB_URL}"
 }
