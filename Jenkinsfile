@@ -1,4 +1,9 @@
+def targetBranch = "master"
 node {
-      stage 'Checkout'
-      echo 'hello world'
+      stage("checkout git") {
+      dir("${WORKSPACE}") {
+          git url: "${gitUrl}", branch: "${targetBranch}"
+          sh "ls -la"
+      }
+    }
 }
