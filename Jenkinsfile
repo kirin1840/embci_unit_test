@@ -1,3 +1,4 @@
 node {
-            echo 'hello world'
+      stage 'Checkout'
+      echo 'hello world'
 }
