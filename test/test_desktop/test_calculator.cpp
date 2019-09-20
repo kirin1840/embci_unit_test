@@ -22,7 +22,7 @@ void test_function_calculator_subtraction(void) {
 }
 
 void test_function_calculator_multiplication(void) {
-    TEST_ASSERT_EQUAL(30, calc.mul(25, 2));
+    TEST_ASSERT_EQUAL(50, calc.mul(25, 2));
 }
 
 void test_function_calculator_division(void) {
