@@ -22,10 +22,19 @@ pipeline {
     stage ('build'){
       steps {
         //print "build"
+        sh 'pio run -e native'
+        //sh 'echo %path%'
+      }
+    }
+    
+    stage ('unit test'){
+      steps {
+        //print "build"
         sh 'platformio test -e native'
         //sh 'echo %path%'
       }
     }
+    
   }       
 }
 /*
