@@ -22,7 +22,7 @@ pipeline {
     stage ('build'){
       steps {
         //print "build"
-        sh 'pio run -e native'
+        sh 'pio run -e uno'
         //sh 'echo %path%'
       }
     }
