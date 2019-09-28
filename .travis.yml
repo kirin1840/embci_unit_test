@@ -26,8 +26,8 @@ cache:
 install:
     # - pip install -U platformio
     # Use development version of PlatformIO 3.2 (temporary)
-    - pip install -U https://github.com/platformio/platformio/archive/develop.zip
-
+    #- pip install -U https://github.com/platformio/platformio/archive/develop.zip
+    - pip install -U https://github.com/platformio/platformio-core/archive/v4.0.3.zip
 
 script:
     - echo "Run desktop (native) tests on Travis.CI Linux machine"
