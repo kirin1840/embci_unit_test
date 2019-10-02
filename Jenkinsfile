@@ -28,7 +28,14 @@ pipeline {
         //sh 'echo %path%'
       }
     }
-    
+    stage ('unit test on board'){
+      steps {
+        //print "build"
+        //sh 'platformio serialports monitor'
+        sh 'platformio test -e uno'
+        //sh 'echo %path%'
+      }
+    }
   }       
 }
 /*
