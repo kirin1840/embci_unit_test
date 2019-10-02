@@ -22,7 +22,7 @@ pipeline {
     stage ('unit test'){
       steps {
         //print "build"
-        sh 'platformio test -e native'
+        sh 'platformio test -e uno'
         //sh 'echo %path%'
       }
     }
