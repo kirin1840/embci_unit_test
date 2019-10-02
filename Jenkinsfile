@@ -22,8 +22,9 @@ pipeline {
     stage ('unit test'){
       steps {
         //print "build"
-        sh 'platformio serialports monitor'
-        sh 'platformio test -e uno'
+        //sh 'platformio serialports monitor'
+        //sh 'platformio test -e uno'
+        sh 'platformio test -e native'
         //sh 'echo %path%'
       }
     }
